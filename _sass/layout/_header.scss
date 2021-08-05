@@ -1,0 +1,48 @@
+ header {
+
+    .nav {
+         max-width:1340px;
+         display: grid;
+         grid-template-columns:minmax(110px, 1fr) repeat(3, auto);
+         grid-gap: 25px;
+         color: $headLinks;
+         padding: 24px 25px 98px 25px;
+        
+        @include breakpoint(large) {
+          
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+      
+     }
+          
+     img {
+         width:4.5em;
+     }
+     
+     @include breakpoint(large) {
+         grid-gap: 58px;
+ 
+         img {
+             width:10.3125rem;
+         }
+     }
+     a {
+         color:$footerBg;
+     }
+ 
+     a:hover {
+         text-decoration: underline;
+     }
+  }
+   
+ 
+
+    
+
+
+
+       
+
+  
+  

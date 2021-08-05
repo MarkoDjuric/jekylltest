@@ -1,0 +1,138 @@
+.cta {
+    background-color: $ctaBckgrnd;
+    
+    &__wrapper {
+        max-width: 1328px;
+        display: flex;
+        gap:5%;
+        flex-direction: column;
+        padding-right: 27px;
+        padding-left: 27px;
+        align-items: center;
+        text-align: center;
+        padding-top: 54px;
+        padding-bottom: 71px;
+        color:#fff;
+
+        @include breakpoint(large) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+     
+            padding-top: 100px;
+            padding-left: 80px;
+            padding-right: 80px;
+            padding-bottom: 80px;
+        }
+    }
+
+    &__text {
+        max-width: 280px;
+        text-align: center;
+
+        @include breakpoint(large){
+            max-width: 533px;
+            text-align: left;
+        }
+            
+           
+
+
+        h2 {
+        
+            font-size: 1.125rem;
+            font-family: Raleway;
+            line-height: 24px;
+            margin: 0;
+
+            @include breakpoint(large){
+                
+                font-size: 2rem;
+                line-height: 48px;
+                font-weight: bold;
+            }
+           
+           
+        }
+
+        p {
+            font-size:0.875rem;
+            line-height: 21px;
+            width: 280px;
+            
+
+            @include breakpoint(large){
+                width: 533px;
+                font-size:1rem;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+            }
+        }
+    }
+
+    &__input{
+     
+        max-width: 240px;
+        &:invalid {
+           border: 1px solid red;
+        }
+        @include breakpoint(large){
+            max-width: 480px;
+           
+            
+        }
+
+
+        .button {
+            font-size: 0.625rem;
+            padding:11px 70px 9px 70px; 
+            width: 240px;
+            box-shadow: 20px 20px 20px rgb(24, 16, 41);
+            transition: all .2s;
+          
+            &:hover {
+                background-color:$btnHover;
+            }
+
+            @include breakpoint(large){
+                padding:16px 22px; 
+                font-size:0.875rem;
+                width: 200px;
+            }
+        }
+
+        #mail {
+          
+            font-size: 0.625rem;
+            padding:11px 102px 9px 8px; 
+            height: 32px;
+            width: 240px;
+            box-shadow: 20px 20px 20px rgb(24, 16, 41);
+            @include breakpoint(large){
+                font-size: 0.875rem;
+                padding:16px 224px 18px 22px;
+                width: 480px;
+            }
+
+
+        }
+        
+    }
+
+    .formflex {
+       
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+       
+          
+
+      
+
+
+
+
+
+

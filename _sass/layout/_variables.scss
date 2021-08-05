@@ -1,0 +1,56 @@
+
+//HEADER
+$headLinks:hsl(243, 87%, 12%); 
+ 
+ // HERO SECTION
+ $btn: 	hsl(224, 93%, 58%);              //#2f65f8
+ $btnHover:hsl(221, 100%, 71%);    //#6c9bff
+
+ $borderGray:	hsl(0, 0%, 76%);        //#c2c2c2
+ $borderRed:hsl(343, 84%, 61%);    //#ef4877
+
+
+ // PRODUCTIVE SECTION
+ $linkCyan: hsl(170, 45%, 43%);          //#3da08f
+ $hoverLink:	hsl(170, 63%, 66%);   //#71dfcc
+
+ // CTA
+ $ctaBckgrnd:hsl(238, 22%, 44%);
+ 
+ // FOOTER
+ $footerBg: hsl(243, 87%, 12%); 	//#07043B
+
+
+ // Fonts 
+ $font-title: 'Raleway', sans-serif;
+ $font-body: 'Open Sans', sans-serif;
+ 
+
+ // Breakpoints
+$breakpoints: (
+    small: 499px,
+    medium: 699px,
+    large: 1146px,
+    mega: 1282px,
+    xlarge: 1399px
+);
+   
+@mixin breakpoint($size){
+    $breakpoint-value: map-get($breakpoints, $size);
+    
+    @media screen and (min-width: $breakpoint-value){
+        @content;
+    }
+}
+
+
+
+
+
+  
+
+ 
+ 
+
+
+

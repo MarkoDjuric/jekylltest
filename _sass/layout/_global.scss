@@ -1,0 +1,119 @@
+html {
+    font-size: 100%;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-body;
+    font-size: calc(1rem + 0.75vw);
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 0.75rem;
+
+    @include breakpoint(large){
+        font-size: 1rem;
+    } 
+
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: $font-title;
+   
+    @include breakpoint(large) {
+      font-size: 2rem;
+    }
+
+    @include breakpoint(mega) {
+      font-size:2.5rem;
+    }
+}
+
+
+
+
+
+
+h2 {
+    font-size: 1.5rem;
+    font-family: $font-title;
+}
+
+p {
+    font-size: 1rem;
+    font-family: $font-body;
+}
+
+ .container {
+    max-width: 1440px;
+    margin: 0 auto;
+ }
+
+#mail {
+    width: 100%;
+  
+    width: 304px;
+    height: 40px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    // padding: 14px 12px 21px 181px;
+    border-radius: 4px;
+
+
+
+    @include breakpoint(large) {
+        width: 320px;
+        height: 45px;
+        margin-right: 16px;
+        
+      }
+}
+
+
+
+.button {
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    // width: 304px;
+    // height: 40px;
+    padding: 12px 113px;
+    font-size: 14px;
+    background-color:$btn;
+    color: #fff;
+    border-radius: 4px;
+
+
+    @include breakpoint(large) {
+        // width: 200px;
+        // height: 45px;
+        padding: 15px 61px;
+
+    }
+    
+
+}
+       
+     
+.footer {
+
+    a {
+        color: white;
+        
+    }
+    
+}
+   
+
+#mail:focus {
+    border: 2px solid red;
+}
+

@@ -1,0 +1,112 @@
+.hero {
+
+               
+
+
+
+  .grid {
+      display: flex;
+      max-width: 1340px;
+      flex-direction: column;
+      align-items: center;
+      padding-right: 27px;
+      padding-left: 27px;
+      padding-bottom: 90px;
+      text-align: center;
+      color:$footerBg;
+
+      h1 {
+        font-size: 1.5rem;
+        font-family: Open Sans;
+        font-weight: bold;
+      }
+  
+
+      @include breakpoint(large) {
+    
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        gap: 0.902vw;
+        padding-left: 80px;
+        padding-right: 80px;
+
+        h1 {
+          font-size: 2.5rem;
+        }
+
+      }
+
+      @include breakpoint(mega) {
+        h1 {
+          font-size: 2.5rem;
+        }
+      }
+          
+
+      .about {  
+        max-width: 320px;
+        order:1;
+
+          p {
+            width: 296px;
+            text-align: center;
+            font-size: 0.875rem;
+          }
+      }
+        
+      img {
+        width:320px;
+      }
+   
+      @include breakpoint(large) {
+
+        img {
+          width: 100%;
+          max-width: 640px; 
+          margin-top: 50px;
+          }
+       
+          .image {  
+            width: 640px; 
+            order: 1;
+          }
+           
+          .about {
+            max-width: 627px;
+            
+            p {
+              font-size: 1.063rem;
+              width: 545px;
+              line-height: 24px;
+              text-align: left;
+            }
+    
+          }
+      
+        }
+      
+      }
+
+}
+       
+        
+       
+    
+
+
+
+
+
+
+
+
+
+
+         
+  
+
+
+       
+
+

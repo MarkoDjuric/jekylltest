@@ -1,0 +1,299 @@
+.productive {
+
+
+    .flex {
+        max-width: 1340px;
+        display: flex;
+        flex-direction: column;
+        padding-right: 27px;
+        padding-left: 27px;
+        align-items: center;
+        text-align: center;
+        color:$footerBg;
+        margin-bottom:111px;
+        
+        @include breakpoint(large) {
+            flex-direction: row;
+            // justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            padding-top: 70px;
+            padding-left: 80px;
+            padding-right: 80px;
+            margin-bottom:111px;
+            gap: 340px;
+        }
+    }
+            
+    
+    .slika {
+        max-width: 320px;
+        order: 1;
+        position: relative;
+        background-color: hsl(240, 75%, 98%);
+
+        @include breakpoint(large) {
+            // flex-basis: 50%;
+             max-width: 542px;
+           
+            }
+
+            img {
+                max-width: 320px;
+
+                @include breakpoint(large) {
+                   width:100%;
+                   max-width: 542px;
+                
+                }
+            }
+        }
+         
+    
+   
+          
+               
+               
+        .quote {
+            
+            border-radius: 5px;
+            width: 280px;
+            position: relative;
+            background-color: #FFF;
+            box-shadow: 0 0 10px #979797;
+            margin: 0 auto;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            padding-right: 12px;
+            padding-left: 26px;
+            margin-top: 40px;
+            color: $footerBg;
+            text-align: left;
+
+            .quote__image {
+                width: 100%;
+                max-width: 14px;
+            }
+                
+            @include breakpoint(large) {
+                width: 356px;
+                min-height: 220px;
+                padding-top: 12px;
+                padding-right: 34px;
+                padding-left: 34px;
+                padding-bottom: 26px;
+            }
+
+            .citat {
+                font-size: 0.625rem;
+                line-height: 18px;
+              
+                @include breakpoint(large) {
+                    max-width: 289px;
+                    font-size: 0.8125rem;
+                    text-align: left;
+                    line-height: 23px;
+                    padding-bottom: 14px;
+                    margin:0;
+                }
+            }
+           
+            .position {
+               font-size:0.375rem;
+                 
+               @include breakpoint(large) {
+                font-size:0.5rem;
+               }
+            }
+    
+            .name {
+              font-size: 0.5625rem;
+              font-weight: bold;
+           
+                @include breakpoint(large) {
+                    font-size: 0.6875rem;
+                }
+    
+            }
+    
+            img {
+                width: 24px;
+    
+                @include breakpoint(large) {
+                    width: 32px;
+                }
+            }
+        }
+             
+        .text {
+            max-width: 320px;
+            order:2;
+    
+            p {
+                font-size: 0.875rem;
+                line-height: 21px;
+            }
+    
+            h1 {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            
+            }    
+          
+            @include breakpoint(large) {
+                order:1;
+               
+    
+                h1 {
+                     width:660px;
+               
+                     font-size: 2.5rem;
+                     margin-bottom: 2.375rem;
+                 }
+                
+                 p {
+                 width: 529px;
+                 font-size: 1rem;
+                 line-height: 24px;
+                }
+             }
+                  
+    
+            a {
+                background-image: url('/images/icon-arrow.svg');
+                background-repeat: no-repeat;
+                background-position: right center;
+                padding-right: 1.714rem;
+                margin-bottom: 2.5rem;
+                color: $linkCyan;
+                border-bottom: 1px solid $linkCyan;
+                transition: all 200ms ease-in-out;
+            
+                &:hover {
+                    color:$hoverLink;
+                    border-bottom: 1px solid $hoverLink;
+                }
+            }
+        
+        }
+    
+        .quote {
+            max-width: 280px;
+            height: 170px;
+           
+
+        
+            @include breakpoint(large){
+                max-width: 356px;
+                height: 170px;
+            }
+
+            &__author {
+                display: grid;
+                grid-template-columns: 32px 1fr;
+                grid-template-rows: 16px 16px;
+              
+                p {
+                    margin: 0;
+                    padding-left: 8px;
+                }
+        
+                &-image {
+                   grid-column: 1 / span 1;
+                   grid-row: 1 / span 2;
+        
+                   img {
+                       width: 100%;
+                       height: auto;
+                       border-radius: 50%;
+                   }
+                }
+            }
+        }
+
+        .slika::before {
+            content: '';
+            background-image: url('/images/bg-curve-desktop.svg');
+          
+            background-size: cover;
+            position: absolute;
+            top: -64px;
+            left: 0;
+            height: 60px;
+            width: 100%;
+        }           
+        
+
+    } 
+    
+                   
+           
+              
+
+    .button:hover {
+        background-color: $btnHover;
+      }
+    
+
+    
+    
+            
+            
+        
+    
+                
+
+
+    
+              
+
+
+
+                
+                
+               
+              
+
+
+
+            
+
+ 
+
+
+
+
+    
+       
+
+           
+   
+   
+    
+
+
+
+
+         
+       
+
+
+
+
+               
+
+                        
+   
+        
+     
+
+
+
+
+
+
+
+
+        
+
+
